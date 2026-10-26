@@ -1,0 +1,32 @@
+{
+  "name": "intern-management",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "node server/index.js",
+    "client": "npm --prefix client run dev",
+    "dev": "concurrently -n \"API,WEB\" -c \"cyan,magenta\" \"npm run server\" \"npm run client\"",
+    "build": "npm --prefix client run build",
+    "test": "echo \"Ready\""
+  },
+  "keywords": [
+    "intern-management",
+    "interntrack",
+    "ai-code-review",
+    "gmail-automation"
+  ],
+  "author": "InternTrack AI",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "concurrently": "^9.2.1",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "googleapis": "^188.0.0",
+    "multer": "^2.5.0",
+    "nodemailer": "^10.2.1"
+  }
+}

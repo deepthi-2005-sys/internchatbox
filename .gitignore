@@ -1,0 +1,26 @@
+# Node dependencies
+node_modules/
+client/node_modules/
+
+# Production build
+client/dist/
+
+# Environment secrets
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# SQLite temporary WAL/SHM files
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Operating System files
+.DS_Store
+Thumbs.db
